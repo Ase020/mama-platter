@@ -11,7 +11,7 @@ const slides = [
   },
   {
     id: 2,
-    title: "we deliver your order wherever you are in NY",
+    title: "we deliver your order wherever you are in Nairobi",
     image: "/slide2.png",
   },
   {
@@ -28,7 +28,7 @@ const Slider = () => {
     const interval = setInterval(
       () =>
         setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1)),
-      4000
+      5000
     );
 
     return () => {
@@ -37,9 +37,9 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row bg-fuchsia-50">
+    <section className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row bg-fuchsia-50">
       <div className="h-1/2 flex flex-col items-center justify-center gap-8 text-red-500 font-bold lg:h-full lg:w-1/2">
-        <h1 className="text-center text-5xl md:text-6xl xl:text-7xl p-4  uppercase">
+        <h1 className="text-center text-5xl md:text-6xl xl:text-7xl p-4  capitalize">
           {slides[currentSlide].title}
         </h1>
         <button className="text-white bg-red-500 px-8 py-4 rounded-xl">
@@ -56,7 +56,7 @@ const Slider = () => {
           className="object-cover"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
