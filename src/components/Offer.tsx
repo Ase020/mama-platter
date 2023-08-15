@@ -21,7 +21,12 @@ const Offer = () => {
       </div>
 
       <div className="relative flex-1 w-full md:h-full">
-        <Image src="/offerProduct.png" alt="offer" fill objectFit="contain" />
+        <Image
+          src="/offerProduct.png"
+          alt="offer"
+          fill
+          className="object-contain"
+        />
       </div>
     </section>
   );

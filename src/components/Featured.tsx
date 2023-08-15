@@ -16,7 +16,7 @@ const Featured = () => {
                   src={product.img}
                   alt={product.title}
                   fill
-                  objectFit="contain"
+                  className="object-contain"
                 />
               </div>
             )}

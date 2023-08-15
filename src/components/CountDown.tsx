@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import Countdown from "react-countdown";
 
 const endingDate = new Date("2023-12-25");
@@ -16,11 +16,10 @@ const CountDown = () => {
 export default CountDown;
 
 // OR
-// "use client"
-// import React, { useState, useEffect } from "react";
+// "use client";
+// import { useState, useEffect } from "react";
 
 // const CountDown = () => {
-
 //   let difference = +new Date(`10/10/2023`) - +new Date();
 //   const [delay, setDelay] = useState(difference);
 

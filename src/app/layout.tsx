@@ -8,7 +8,7 @@ import Navbar from "../components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mama Platter",
+  title: "Mama's Platter",
   description: "The best place on the web to find your next delicious meal.",
 };
 
