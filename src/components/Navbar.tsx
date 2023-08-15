@@ -38,7 +38,9 @@ const Navbar = () => {
           <Link href="/login">Login</Link>
         )}
 
-        <Link href="/cart">{/* <CartIcon /> */}</Link>
+        <Link href="/cart">
+          <CartIcon />
+        </Link>
       </div>
     </header>
   );

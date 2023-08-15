@@ -24,17 +24,17 @@ const slides = [
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // useEffect(() => {
-  //   const interval = setInterval(
-  //     () =>
-  //       setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1)),
-  //     5000
-  //   );
+  useEffect(() => {
+    const interval = setInterval(
+      () =>
+        setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1)),
+      5000
+    );
 
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, []);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <section className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row bg-fuchsia-50">
