@@ -1,7 +1,35 @@
-type Props = {};
+import Image from "next/image";
 
-const ProductPage = (props: Props) => {
-  return <div>ProductPage</div>;
+import { singleProduct } from "@/data";
+import Price from "@/components/Price";
+
+const ProductPage = () => {
+  return (
+    <div className="p-4 lg:px-20 xl:px-40 h-screen flex flex-col md:flex-row justify-around text-red-500 md:gap-8 md:items-center">
+      {singleProduct.img && (
+        <div className="relative w-full h-1/2 md:h-[70%]">
+          <Image
+            src={singleProduct.img}
+            alt={singleProduct.title}
+            className="object-contain"
+            fill
+          />
+        </div>
+      )}
+
+      <div className="h-1/2 md:h-[70%] flex flex-col md:justify-center gap-4 md:gap-6 xl:gap-8">
+        <h1 className="text-3xl xl:text-5xl font-bold capitalize">
+          {singleProduct.title}
+        </h1>
+        <p className="">{singleProduct.desc}</p>
+        <Price
+          price={singleProduct.price}
+          id={singleProduct.id}
+          options={singleProduct.options}
+        />
+      </div>
+    </div>
+  );
 };
 
 export default ProductPage;
