@@ -12,7 +12,7 @@ const CategoryPage = () => {
           key={pizza.id}
         >
           {pizza.img && (
-            <div className="relative h-[80%]  hover:rotate-[-60deg] transition-all duration-500 ease-in">
+            <div className="relative h-[80%]  hover:scale-105 transition-all duration-500 ease-in">
               <Image
                 src={pizza.img}
                 alt={pizza.title}
