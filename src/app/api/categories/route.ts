@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { prisma } from "@/utlis/connect";
+import { prisma } from "@/utils/connect";
 
 // fetch all categories
 export const GET = async () => {

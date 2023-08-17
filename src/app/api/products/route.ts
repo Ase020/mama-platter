@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { prisma } from "@/utlis/connect";
+import { prisma } from "@/utils/connect";
 
 // fetch all products
 export const GET = async (req: NextRequest) => {
